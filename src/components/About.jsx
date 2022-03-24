@@ -12,7 +12,7 @@ const About = () => {
     <div className='w-full bg-black text-white text-center'>
       <div className='max-w-[1240px] mx-auto px-4 py-16'>
         <div>
-          <h1 className='py-4'>A Growing Protocol Ecosystem</h1>
+          <h1 className='py-4'><a id='platform'>A Growing Protocol Ecosystem</a></h1>
           <p className='p-4 text-xl'>
             The Defi protocol system empowers developers, liquidity providers,
             and traders to participate in a financial marketplace that is open

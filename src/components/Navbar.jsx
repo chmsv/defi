@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+
 import { RiMenuLine, RiCloseLine } from 'react-icons/ri';
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false)
+  const [nav, setNav] = useState(false);
   const handleNav = () => {
-    setNav(!nav)
-  }
+    setNav(!nav);
+  };
 
   return (
     <div className='w-full h-28 bg-[#02010a]'>
@@ -15,10 +16,18 @@ const Navbar = () => {
         </div>
         <div className='hidden md:flex'>
           <ul className='flex items-center text-white'>
-            <li>Platform</li>
-            <li>Developers</li>
-            <li>Community</li>
-            <li>About</li>
+            <li>
+              <a href='#footer'>About</a>
+            </li>
+            <li>
+              <a href='#platform'>Platform</a>
+            </li>
+            <li>
+              <a href='#devs'>Developers</a>
+            </li>
+            <li>
+              <a href='#join'>Community</a>
+            </li>
             <button className='ml-4'>Use DEFI</button>
           </ul>
         </div>
@@ -29,7 +38,13 @@ const Navbar = () => {
             <RiMenuLine size={30} className='text-white' />
           )}
         </div>
-        <div className={nav ? 'w-full bg-[#02010a] text-white text-2xl absolute top-28 left-0 flex justify-center text-center h-full' : 'absolute left-[-100%]'}>
+        <div
+          className={
+            nav
+              ? 'w-full bg-[#02010a] text-white text-2xl absolute top-28 left-0 flex justify-center text-center h-full'
+              : 'absolute left-[-100%]'
+          }
+        >
           <ul>
             <li>Platform</li>
             <li>Developers</li>

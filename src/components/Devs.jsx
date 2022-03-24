@@ -6,7 +6,7 @@ const Devs = () => {
     <div className='w-full text-white bg-[#02010a]'>
       <div className='max-w-[1240px] mx-auto px-4 py-4 md:py-8 md:flex'>
         <div className='px-8'>
-          <h1>Superpowers for DEFI developers.</h1>
+          <h1><a id='devs'>Superpowers for DEFI developers.</a></h1>
           <p className='py-4'>
             Checkout the <span className='text-[#6fffe9]'>documentation</span>,
             the <span className='text-[#6fffe9]'>quick start</span> or a guide
